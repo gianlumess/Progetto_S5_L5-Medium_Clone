@@ -17,7 +17,10 @@ nav {
   min-height: 50px;
   background-color: #ffc017;
   border-bottom: 1px solid black;
-  padding-inline: 100px;
+  padding-inline: 10%;
+  position: sticky;
+  top: 0;
+  z-index: 9;
 }
 
 .nav-link {
@@ -52,4 +55,25 @@ header {
 
 .title-hero h1 {
   font-size: 3em;
+}
+
+.trend-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding-inline: 10%;
+  padding-block: 5%;
+  gap: 45px;
+  border-bottom: 1px solid black;
+}
+
+.trend-container .trend {
+  flex: 1 1 calc(33.33% - 45px);
+  display: flex;
+  flex-direction: column;
+  row-gap: 15px;
+}
+
+.trend img {
+  border-radius: 50%;
 }
