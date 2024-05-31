@@ -89,6 +89,12 @@ header {
   border-bottom: 1px solid #a2adad;
 }
 
+.trend-image {
+  position: absolute;
+  left: 7%;
+  bottom: 29%;
+}
+
 .trend-container .trend {
   flex: 1 1 calc(33.33% - 45px);
   display: flex;
