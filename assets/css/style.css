@@ -24,6 +24,16 @@ nav {
   z-index: 9;
 }
 
+main {
+  width: 100%;
+}
+main span {
+  color: #575b5b;
+}
+
+button {
+  cursor: pointer;
+}
 .nav-link {
   display: flex;
   align-items: center;
@@ -44,7 +54,8 @@ header {
   justify-content: space-between;
   background-color: #ffc017;
   max-width: 100%;
-  border-bottom: 1px solid black;
+  border-bottom: 1px solid #a2adad;
+  padding-left: 10%;
 }
 
 .title-hero {
@@ -65,7 +76,7 @@ header {
   padding-inline: 10%;
   padding-block: 5%;
   gap: 45px;
-  border-bottom: 1px solid black;
+  border-bottom: 1px solid #a2adad;
 }
 
 .trend-container .trend {
@@ -92,8 +103,17 @@ header {
   justify-content: center;
   flex-direction: column;
   row-gap: 45px;
+  min-width: 60%;
 }
 
+.article {
+  display: flex;
+  justify-content: space-between;
+  column-gap: 10px;
+}
+.article > img {
+  max-width: 30%;
+}
 .article-text {
   display: flex;
   flex-direction: column;
@@ -107,4 +127,44 @@ header {
 .article-text h2 {
   font-weight: bold;
   font-size: 2em;
+}
+
+.article-text img {
+  border-radius: 50%;
+}
+
+.aside-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.aside-container h4 {
+  font-weight: bold;
+  font-size: 1.5em;
+}
+
+.aside-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  padding-top: 1.8em;
+  padding-bottom: 2.5em;
+  border-bottom: 1px solid #a2adad;
+}
+
+.aside-buttons button {
+  background-color: white;
+  width: 30%;
+  height: 3em;
+  font-family: "roboto", sans-serif;
+  color: #575b5b;
+  border-radius: 5px;
+  border: 1px solid #a2adad;
+}
+
+.aside-links {
+  padding-top: 2.5em;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
 }
