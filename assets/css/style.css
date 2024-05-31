@@ -18,6 +18,7 @@ nav {
   background-color: #ffc017;
   border-bottom: 1px solid black;
   padding-inline: 10%;
+  padding-block: 1.5em;
   position: sticky;
   top: 0;
   z-index: 9;
@@ -76,4 +77,34 @@ header {
 
 .trend img {
   border-radius: 50%;
+}
+
+.section-container {
+  display: flex;
+  justify-content: center;
+  column-gap: 100px;
+  padding-inline: 10%;
+  padding-block: 5%;
+}
+
+.articles-container {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  row-gap: 45px;
+}
+
+.article-text {
+  display: flex;
+  flex-direction: column;
+  row-gap: 15px;
+}
+
+.article-text span:first-of-type {
+  font-weight: bold;
+}
+
+.article-text h2 {
+  font-weight: bold;
+  font-size: 2em;
 }
