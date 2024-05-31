@@ -66,9 +66,19 @@ header {
 }
 
 .title-hero h1 {
-  font-size: 3em;
+  font-size: 6em;
+  font-family: "Spectral", serif;
 }
 
+.title-hero button {
+  font-family: "Roboto", sans-serif;
+  border: 0;
+  border-radius: 20px;
+  background-color: #191919;
+  color: white;
+  padding: 10px;
+  width: 25%;
+}
 .trend-container {
   display: flex;
   justify-content: center;
@@ -88,6 +98,10 @@ header {
 
 .trend img {
   border-radius: 50%;
+}
+
+.trend h3 {
+  font-weight: bold;
 }
 
 .section-container {
@@ -118,6 +132,7 @@ header {
   display: flex;
   flex-direction: column;
   row-gap: 15px;
+  position: relative;
 }
 
 .article-text span:first-of-type {
@@ -133,6 +148,19 @@ header {
   border-radius: 50%;
 }
 
+.article-text strong {
+  background-color: #eff1f1;
+  border-radius: 15px;
+  padding: 0.5em;
+}
+
+.article-text .bookmark {
+  width: 30px;
+  position: absolute;
+  bottom: -4px;
+  right: 45px;
+  cursor: pointer;
+}
 .aside-container {
   display: flex;
   flex-direction: column;
@@ -154,7 +182,6 @@ header {
 
 .aside-buttons button {
   background-color: white;
-  width: 30%;
   height: 3em;
   font-family: "roboto", sans-serif;
   color: #575b5b;
