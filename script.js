@@ -15,3 +15,33 @@ window.addEventListener("scroll", function () {
     navbar.classList.remove("scrolledNav");
   }
 });
+
+// Funzione per selezionare un elemento random
+function getRandomElement(arr) {
+  return arr[Math.floor(Math.random() * arr.length)];
+}
+
+//funzione che anima l'svg nell'header
+//
+const svgArray = document.getElementById("heroSvg");
+
+//trasformo l'HTML COLLECTION in un ARRAY per poter usare .filter()
+const gElements = Array.from(svgArray.getElementsByTagName("g"));
+
+// Filtra gli elementi con stroke-miterlimit="4"
+const onlyM = gElements.filter(
+  (g) => g.getAttribute("stroke-miterlimit") == "4"
+);
+
+if (miterLimitElements.length > 0) {
+  const randomG = getRandomElement(miterLimitElements);
+
+  // Cambia l'opacità
+  if (randomG.getAttribute("opacity") == "1") {
+    randomG.setAttribute("opacity", "0");
+  } else {
+    randomG.setAttribute("opacity", "1");
+  }
+}
+
+console.log(onlyM);
