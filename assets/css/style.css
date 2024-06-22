@@ -137,6 +137,7 @@ header {
 }
 .article > img {
   max-width: 30%;
+  object-fit: cover;
 }
 .article-text {
   display: flex;
